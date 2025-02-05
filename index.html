@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto_Apex Company</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <header class="bg-light py-3">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <h1>Auto_<span class="highlight">Apex</span></h1>
+
+          <nav>
+            <ul class="nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+              <br />
+              <br />
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary me-2 nav-link"
+                >
+                  Log in
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn btn-primary" type="button">Sign up</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero" id="Home">
+        <div class="hero-content">
+          <h2>
+            Find & Search Your <br> <span class="highlight">Favourite</span> Drive
+          </h2>
+          <p>
+            Rent a Vehicle for your needs at competitive prices.
+          </p>
+          <br />
+          <br />
+          <div class="search-bar">
+            <select id="Location" class="input-field" data-icon="👨‍⚕️">
+              <option>Location</option>
+              <option>Nairobi</option>
+              <option>Naivasha</option>
+              <option>Nakuru</option>
+              <option>Kisumu</option>
+              <option>Mombasa</option>
+            </select>
+            <select id="size" class="input-field" data-icon="📍">
+              <option>select your drive</option>
+              <option>Convertible</option>
+              <option>Hatchback</option>
+              <option>Sedan</option>
+                <option>SUV</option>
+                <option>Truck</option>
+                <option>Van</option>
+                <option>Wagon</option>
+            </select>
+            <button class="search-icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="distinction">
+          <div class="info-text">
+            <div class="info-item">
+              <h3>24/7</h3>
+              <p>Online Support</p>
+            </div>
+            <div class="info-item">
+              <h3>100+</h3>
+              <p>Mechanics</p>
+            </div>
+            <div class="info-item">
+              <h3>1M+</h3>
+              <p>Active Client</p>
+            </div>
+          </div>
+          <div class="info-image">
+            <img
+              src="https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post/original/58894a681ba55.jpg"
+              alt="Vehicle image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="our-consulting-specialists">
+        <h2>Our Consulting Specialists</h2>
+        <br />
+        <div class="specialists-items">
+          <div class="specialist-item">
+            <i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-i3SDHm1DrKzUNvavbAzv9Hkuu_OwdKaH2w&s" alt="" /></i>
+            <h3> Sales Consultants</h3>
+            <p>
+              Assist customers in selecting vehicles, explain features, and provide financing options.
+            </p>
+          </div>
+          <div class="specialist-item">
+            <i><img src="data:image/png;base64,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" alt="" /></i>
+            <h3>Service Consultants</h3>
+            <p>
+              Liaise between customers and the service department, explain service needs, and manage service bookings.
+              Understanding of automotive repair processes and excellent interpersonal skills.
+            </p>
+          </div>
+          <div class="specialist-item">
+            <i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDf8BhtQu8XubFWBsv5oYKk5tPWnQtUiTQw&s" alt="" /></i>
+            <h3>Technical Consultants</h3>
+            <p>
+              Provide expertise on vehicle technology, diagnostics, and repairs.
+              In-depth knowledge of automotive systems, problem-solving abilities.
+            </p>
+          </div>
+          <div class="specialist-item">
+            <i><img src="data:image/png;base64,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" alt="" /></i>
+            <h3>Financial Consultants</h3>
+            <p>
+              Provide financial advice related to vehicle financing options and business operations.
+              Knowledge of automotive financing and financial planning.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="why-you-choose-us">
+        <div class="why-you-choose-us">
+          <div class="bestcaremechanicgarage">
+            <img
+              src="https://bestcaremechanicgarage.co.ke/wp-content/uploads/2025/01/mechanic-garage-nairobi-kenya-1.png"
+              alt="Mechanics Services"
+            />
+          </div>
+          <div class="why-choose-us">
+            <h3><b>Why You Choose Us?</b></h3>
+            <br />
+            <ul>
+              <li>
+                <i class="bi bi-check-circle-fill text-success"></i>Diverse Vehicle Options.
+              </li> Wide range of vehicles for sale or hire, catering to personal, business, and luxury needs. 
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success"></i>Expert Automotive Services
+                Skilled professionals offering maintenance, repairs, and diagnostics with state-of-the-art equipment. 
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success"></i>Customer-Centric Approach,
+                Tailored solutions, transparent pricing, and a commitment to customer satisfaction.  
+
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill" text-success></i>Convenience and Flexibility,
+                Easy rental processes, flexible terms, and prompt service to save you time and effort.
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill" text-success></i>Proven Track Record,
+                Trusted by countless customers for quality, reliability, and professionalism. 
+              </li>
+            </ul>
+            <br />
+            <a href="#" class="btn btn-link text-decoration-none"
+              >Learn More &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="what-our-members">
+        <div class="testimonial-section">
+          <div class="testimonial-header">
+            <h2>What <span>Our Member's</span> Saying About Us</h2>
+            <p>
+              "A trusted company specializing in vehicle sales, rentals, and mechanical services, they take pride in delivering exceptional quality and customer satisfaction. Hear firsthand how they’ve exceeded expectations and earned the loyalty of clients. Your journey with Auto_Apex is more than a service—it’s a commitment to excellence."
+            </p>
+            <div class="reviews">
+              <div class="review-avatars">
+                <img
+                  src="https://media.istockphoto.com/id/1165314750/photo/living-that-urban-life.jpg?s=612x612&w=0&k=20&c=5If9eBsKrj2N0EDx8dvMM6SOEUqNlBTpY-POmwYIt4o="
+                  alt="user 1"
+                />
+                <img
+                  src="https://img.freepik.com/premium-photo/smiling-young-black-businesswoman-eyeglasses-taking-notes-white-background_153608-64488.jpg"
+                  alt="user 2"
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/confident-african-businesswoman-mockup-psd-smiling-closeup-portr_53876-143279.jpg?t=st=1738690144~exp=1738693744~hmac=38d2171f79e0d5e31a57075c9e311afcb7206cc9d25c7a2413d6e4b811fb7a6a&w=740"
+                  alt="user 3"
+                />
+                <img
+                  src="https://media.istockphoto.com/id/1413765605/photo/portrait-of-successful-african-american-business-woman.jpg?s=612x612&w=0&k=20&c=7SssKFIuj7EYG_c2A0ZIJUqZpd3hmjQW8P_TMF1WJ5I="
+                  alt="user 4"
+                />
+                <img
+                  src="https://media.istockphoto.com/id/1366857153/photo/portrait-of-dreamy-young-black-man-looking-at-infinity-in-a-park.jpg?s=612x612&w=0&k=20&c=HL3lvJBWtgmBFgpYySbYdlTcprPvufSvxKrlHGMi7HE="
+                  alt="user 4"
+                />
+                <img
+                  src="https://media.istockphoto.com/id/1138563417/photo/african-american-businessman-smiling-on-grey.jpg?s=612x612&w=0&k=20&c=BA7cBTeFK-y0akeJlQhTT4PZ632Cci7CMjuPhWU3bTc="
+                  alt="user 5"
+                />
+              </div>
+            </div>
+            <p>100+ Reviews</p>
+          </div>
+          <div class="testimonial-card">
+            <img
+                  src="https://img.freepik.com/free-photo/confident-african-businesswoman-mockup-psd-smiling-closeup-portr_53876-143279.jpg?t=st=1738690144~exp=1738693744~hmac=38d2171f79e0d5e31a57075c9e311afcb7206cc9d25c7a2413d6e4b811fb7a6a&w=740"
+                  alt="user 3"
+            <h3>Esther Kola</h3>
+            <p class="date">18/01/25</p>
+            <div class="rating">★★★★★</div>
+            <p>
+              Their expertise ensures quality and reliability for customers seeking dependable transportation or maintenance support.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="quality-health-section">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="fw-bold">
+                The Future of <span class="text-primary">Quality Machines</span>
+              </h2>
+              <p class="text-muted">
+                The evolution of vehicles and machines is rapidly transforming the global landscape, driven by advancements in technology and a growing emphasis on sustainability. The future promises a new era where quality, efficiency, and innovation converge to redefine mobility and industrial operations.  
+              </p>
+              <p class="text-muted">
+                Electric vehicles (EVs) are at the forefront of this revolution, with manufacturers focusing on improving battery performance, extending range, and reducing charging times. Simultaneously, autonomous driving technology is gaining traction, offering safer and more efficient transportation solutions. These advancements aim to meet consumer demand for high-quality, eco-friendly vehicles while addressing global concerns about carbon emissions.  
+
+              </p>
+              <p class="text-muted">
+                In the industrial sector, machines are becoming smarter and more adaptive due to the integration of artificial intelligence (AI) and the Internet of Things (IoT). Predictive maintenance, enhanced precision, and energy efficiency are now standard expectations for modern machinery. These innovations not only improve productivity but also reduce operational costs and environmental impact.  
+              </p>
+              <a href="#" class="btn btn-link text-primary text-decoration-none"
+                >Learn More →</a
+              >
+            </div>
+            <div class="col-md-6">
+              <img
+                src="https://scottsauto.com/wp-content/uploads/2024/08/CarEngine2.jpg"
+                alt="CarEngine"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-section">
+        <div class="newsletter-section">
+          <h2>Subscribe to Our Newsletter</h2>
+          <div class="input-container">
+            <input type="email" placeholder="Enter your email" />
+            <button><span>→</span></button>
+          </div>
+        </div>
+      </section>
+      <footer
+        style="
+          background-color: #0858ad;
+          color: white;
+          padding: 20px 0;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <div
+          style="
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 0 20px;
+          "
+        >
+          <div class="footer=text">
+            <h3>Auto_Apex</h3>
+            <p>
+              At Auto_Apex, we pride ourselves on offering a diverse range of vehicles tailored to suit every lifestyle and budget. From sleek sedans to rugged SUVs, our inventory is carefully curated to meet your unique needs. Need a car for a weekend getaway or a business trip? Our hassle-free vehicle hire services ensure you’re always on the move with confidence.  
+But we don’t stop there. Our expert team provides top-tier automotive services, including maintenance, repairs, and diagnostics, ensuring your vehicle stays in peak condition. With cutting-edge technology and skilled technicians, we guarantee quality and reliability in every service we offer. 
+            </p>
+            <p>
+              Our commitment to customer satisfaction, transparent pricing, and personalized solutions sets us apart in the industry. Experience the Auto_Apex difference today. Let us help you drive forward with confidence and ease. Visit us now and discover why we’re the trusted choice for all your automotive needs!
+            </p>
+            <div style="display: flex; gap: 10px">
+              <a
+                href="#"
+                style="color: white; text-decoration: none; font-size: 20px"
+                >&#128309;
+              </a>
+              <a
+                href="#"
+                style="color: white; text-decoration: none; font-size: 20px"
+                >&#128038;</a
+              >
+              <a
+                href="#"
+                style="color: white; text-decoration: none; font-size: 20px"
+                >&#128248;</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3>Useful Links</h3>
+            <ul style="list-style: none; padding: 0; margin: 0">
+              <li>
+                <a href="#" style="color: white; text-decoration: none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" style="color: white; text-decoration: none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" style="color: white; text-decoration: none"
+                  >Our Mission</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Address</h3>
+            <img
+              src="https://maps.twomoons.de/styles/basic-preview/12/2467/2062.png"
+              alt="Map"
+              style="border-radius: 5px; max-width: 100%"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            padding-top: 10px;
+          "
+        >
+          &copy 2025 All Rights Reserved
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
